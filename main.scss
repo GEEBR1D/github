@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+    ;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #F5F5F5;
+    overflow-x: hidden;
+    width: 105%;
+
+    header {
+        width: 100%;
+        height: 100vh;
+
+        .nav {
+            width: 100%;
+            height: 200px;
+
+            .container {
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .about {
+                    ul {
+                        display: flex;
+                        gap: 30px;
+
+                        li {
+                            a {
+                                display: inline-block;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 24px;
+                                /* identical to box height, or 150% */
+
+                                text-align: center;
+
+                                color: #161513;
+
+                            }
+                        }
+                    }
+                }
+
+                .talk {
+                    a {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        /* identical to box height, or 150% */
+
+                        text-align: center;
+
+                        color: #161513;
+                        border: 1px solid #161513;
+                        padding: 10px 20px;
+                    }
+                }
+            }
+        }
+
+        .banner {
+            width: 100%;
+            height: 600px;
+
+            .container {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+
+                    h1 {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 56px;
+                        line-height: 64px;
+                        /* identical to box height, or 114% */
+
+                        letter-spacing: 0.56px;
+
+                        color: #161513;
+                    }
+
+                    .dizayn {
+                        display: flex;
+                        gap: 15px;
+
+                        h3 {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 23px;
+                            line-height: 32px;
+                            /* identical to box height, or 139% */
+
+                            letter-spacing: 0.48px;
+
+                            color: #161513;
+                        }
+                    }
+
+                    .project {
+                        display: flex;
+
+                        .first {
+                            background-color: #FFFFFF;
+                            width: 180px;
+                            height: 45px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #000;
+                            &.active{
+                                background-color: #000;
+                                color: #fff;
+                            }
+                        }
+                    }
+
+                    .second {
+                        background-color: #FFFFFF;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 180px;
+                        height: 45px;
+                        border: 2px solid black;
+                        color: black;
+                    }
+
+                    a {
+                        display: inline-block;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        /* identical to box height, or 150% */
+
+                        text-align: center;
+
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+
+    .tugadi {
+        position: relative;
+
+        .end {
+            position: absolute;
+            top: 300px;
+            right: 20px;
+            width: 7000px;
+            height: 100px;
+            transform: rotate(-4.93deg);
+            background-color: #161513;
+            display: flex;
+            align-items: center;
+            gap: 200px;
+            animation: ozod 10s infinite linear;
+
+            .card {
+                display: flex;
+                gap: 10px;
+                color: #FFFFFF;
+
+            }
+        }
+    }
+}
+
+@keyframes ozod {
+    from {
+        transform: rotate(-4.93deg) translateX(0px);
+    }
+
+    to {
+        transform: rotate(-4.93deg) translateX(3020px);
+    }
+}
